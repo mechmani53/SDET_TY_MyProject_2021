@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel = "tests" thread-count="5">
+
+  <test  name="Test_runner_01">
+ 	 <parameter name="browser" value="chrome"/>
+ 	   <classes>
+     	 <class name="com.crm.vtiger.LeadModuleTests.TC_32_ConvertLeadToOpportunitiesAmount_Test"/>
+  	   </classes>
+  </test> <!-- Test -->
+      
+  <test  name="Test_runner_02">
+  	<parameter name="browser" value="firefox"/>
+    	<classes>
+     	 <class name="com.crm.vtiger.LeadModuleTests.TC_34_ConvertLeadToOpportunitiesEditable_Test"/>
+       </classes>
+   </test> <!-- Test -->
+      
+   <test  name="Test_runner_03">
+	 <parameter name="browser" value="chrome"/>
+ 		<classes>
+      		<class name="com.crm.vtiger.LeadModuleTests.TC_35_ConvertLeadToOpportunitiesCheckboxUnSelect_Test"/>
+     	</classes>
+   </test> <!-- Test -->
+      
+   <test  name="Test_runner_04">
+ 		<parameter name="browser" value="firefox"/>
+ 		  	<classes>
+      			<class name="com.crm.vtiger.LeadModuleTests.TC_31_ConvertLeadToOpportunitiesInvalidDate_Test"/>
+    		</classes>
+      </test> <!-- Test -->
+      
+    <test  name="Test_runner_05">
+ 		 <parameter name="browser" value="chrome"/>
+ 		  	<classes>
+      			<class name="com.crm.vtiger.LeadModuleTests.TC_33_ConvertLeadToOpportunitiesInvalidAmount_Test"/>
+   			</classes>
+ 	</test> <!-- Test -->
+</suite> <!-- Suite -->

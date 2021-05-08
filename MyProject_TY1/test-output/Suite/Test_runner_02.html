@@ -1,0 +1,933 @@
+<html>
+<head>
+<title>TestNG:  Test_runner_02</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test_runner_02</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/3/1</td>
+</tr><tr>
+<td>Started on:</td><td>Tue May 04 12:43:30 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>217 seconds (217899 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.crm.vtiger.LeadModuleTests.TC_31_ConvertLeadToOpportunitiesInvalidDate_Test.setUp()'><b>setUp</b><br>Test class: com.crm.vtiger.LeadModuleTests.TC_31_ConvertLeadToOpportunitiesInvalidDate_Test</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NESS-PC&apos;, ip: &apos;192.168.68.242&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210502185943, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 7392, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0e07c3ee-b066-4b6f-aca2-3079203b9943
+*** Element info: {Using=name, value=user_name}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at vtiger.automation.BaseClass.setUp(BaseClass.java:68)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace17750354", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace17750354'><pre>org.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NESS-PC&apos;, ip: &apos;192.168.68.242&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210502185943, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 7392, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0e07c3ee-b066-4b6f-aca2-3079203b9943
+*** Element info: {Using=name, value=user_name}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at vtiger.automation.BaseClass.setUp(BaseClass.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>com.crm.vtiger.LeadModuleTests.TC_31_ConvertLeadToOpportunitiesInvalidDate_Test@bdb19</td></tr>
+<tr>
+<td title='com.crm.vtiger.LeadModuleTests.TC_34_ConvertLeadToOpportunitiesEditable_Test.tearDown()'><b>tearDown</b><br>Test class: com.crm.vtiger.LeadModuleTests.TC_34_ConvertLeadToOpportunitiesEditable_Test</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NESS-PC&apos;, ip: &apos;192.168.68.242&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210502185943, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 6424, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d1078a29-e60e-4e4d-b170-e5ef800f7445
+*** Element info: {Using=xpath, value=//img[@src=&apos;themes/softed/images/user.PNG&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at vtiger.automation.BaseClass.tearDown(BaseClass.java:75)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace18459190", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace18459190'><pre>org.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NESS-PC&apos;, ip: &apos;192.168.68.242&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210502185943, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 6424, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d1078a29-e60e-4e4d-b170-e5ef800f7445
+*** Element info: {Using=xpath, value=//img[@src=&apos;themes/softed/images/user.PNG&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at vtiger.automation.BaseClass.tearDown(BaseClass.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:671)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:655)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.crm.vtiger.LeadModuleTests.TC_34_ConvertLeadToOpportunitiesEditable_Test@9a3d1d</td></tr>
+<tr>
+<td title='com.crm.vtiger.LeadModuleTests.TC_35_ConvertLeadToOpportunitiesCheckboxUnSelect_Test.tearDown()'><b>tearDown</b><br>Test class: com.crm.vtiger.LeadModuleTests.TC_35_ConvertLeadToOpportunitiesCheckboxUnSelect_Test</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NESS-PC&apos;, ip: &apos;192.168.68.242&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210502185943, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 6648, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9f20b6db-b4ee-4538-80d6-5c0b79335459
+*** Element info: {Using=xpath, value=//img[@src=&apos;themes/softed/images/user.PNG&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at vtiger.automation.BaseClass.tearDown(BaseClass.java:75)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace10551139", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace10551139'><pre>org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NESS-PC&apos;, ip: &apos;192.168.68.242&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210502185943, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 6648, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9f20b6db-b4ee-4538-80d6-5c0b79335459
+*** Element info: {Using=xpath, value=//img[@src=&apos;themes/softed/images/user.PNG&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at vtiger.automation.BaseClass.tearDown(BaseClass.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:671)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:655)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
+<td>com.crm.vtiger.LeadModuleTests.TC_35_ConvertLeadToOpportunitiesCheckboxUnSelect_Test@6be70a</td></tr>
+<tr>
+<td title='com.crm.vtiger.LeadModuleTests.TC_33_ConvertLeadToOpportunitiesInvalidAmount_Test.tearDown()'><b>tearDown</b><br>Test class: com.crm.vtiger.LeadModuleTests.TC_33_ConvertLeadToOpportunitiesInvalidAmount_Test</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NESS-PC&apos;, ip: &apos;192.168.68.242&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210502185943, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 9592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8b0c0258-cb10-466f-a17d-e02c4475224c
+*** Element info: {Using=xpath, value=//img[@src=&apos;themes/softed/images/user.PNG&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at vtiger.automation.BaseClass.tearDown(BaseClass.java:75)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace33168756", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace33168756'><pre>org.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NESS-PC&apos;, ip: &apos;192.168.68.242&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210502185943, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 9592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8b0c0258-cb10-466f-a17d-e02c4475224c
+*** Element info: {Using=xpath, value=//img[@src=&apos;themes/softed/images/user.PNG&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at vtiger.automation.BaseClass.tearDown(BaseClass.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:671)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:655)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.crm.vtiger.LeadModuleTests.TC_33_ConvertLeadToOpportunitiesInvalidAmount_Test@556333</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.crm.vtiger.LeadModuleTests.TC_31_ConvertLeadToOpportunitiesInvalidDate_Test.tearDown()'><b>tearDown</b><br>Test class: com.crm.vtiger.LeadModuleTests.TC_31_ConvertLeadToOpportunitiesInvalidDate_Test</td>
+<td></td>
+<td>-1620112606</td>
+<td>com.crm.vtiger.LeadModuleTests.TC_31_ConvertLeadToOpportunitiesInvalidDate_Test@bdb19</td></tr>
+<tr>
+<td title='com.crm.vtiger.LeadModuleTests.TC_34_ConvertLeadToOpportunitiesEditable_Test.configAC()'><b>configAC</b><br>Test class: com.crm.vtiger.LeadModuleTests.TC_34_ConvertLeadToOpportunitiesEditable_Test</td>
+<td></td>
+<td>-1620112556</td>
+<td>com.crm.vtiger.LeadModuleTests.TC_34_ConvertLeadToOpportunitiesEditable_Test@9a3d1d</td></tr>
+<tr>
+<td title='com.crm.vtiger.LeadModuleTests.TC_35_ConvertLeadToOpportunitiesCheckboxUnSelect_Test.configAC()'><b>configAC</b><br>Test class: com.crm.vtiger.LeadModuleTests.TC_35_ConvertLeadToOpportunitiesCheckboxUnSelect_Test</td>
+<td></td>
+<td>-1620112594</td>
+<td>com.crm.vtiger.LeadModuleTests.TC_35_ConvertLeadToOpportunitiesCheckboxUnSelect_Test@6be70a</td></tr>
+<tr>
+<td title='com.crm.vtiger.LeadModuleTests.TC_31_ConvertLeadToOpportunitiesInvalidDate_Test.configAC()'><b>configAC</b><br>Test class: com.crm.vtiger.LeadModuleTests.TC_31_ConvertLeadToOpportunitiesInvalidDate_Test</td>
+<td></td>
+<td>-1620112606</td>
+<td>com.crm.vtiger.LeadModuleTests.TC_31_ConvertLeadToOpportunitiesInvalidDate_Test@bdb19</td></tr>
+<tr>
+<td title='com.crm.vtiger.LeadModuleTests.TC_33_ConvertLeadToOpportunitiesInvalidAmount_Test.configAC()'><b>configAC</b><br>Test class: com.crm.vtiger.LeadModuleTests.TC_33_ConvertLeadToOpportunitiesInvalidAmount_Test</td>
+<td></td>
+<td>-1620112628</td>
+<td>com.crm.vtiger.LeadModuleTests.TC_33_ConvertLeadToOpportunitiesInvalidAmount_Test@556333</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.crm.vtiger.LeadModuleTests.TC_32_ConvertLeadToOpportunitiesAmount_Test.convertLeadToOpportunity()'><b>convertLeadToOpportunity</b><br>Test class: com.crm.vtiger.LeadModuleTests.TC_32_ConvertLeadToOpportunitiesAmount_Test</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=90.0.4430.93)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NESS-PC&apos;, ip: &apos;192.168.68.242&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53881}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 77116073afca41b8cbc73f0da6147205
+*** Element info: {Using=link text, value=Convert Lead}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.crm.vtiger.LeadModuleTests.TC_32_ConvertLeadToOpportunitiesAmount_Test.convertLeadToOpportunity(TC_32_ConvertLeadToOpportunitiesAmount_Test.java:35)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace3979488", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace3979488'><pre>org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=90.0.4430.93)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NESS-PC&apos;, ip: &apos;192.168.68.242&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53881}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 77116073afca41b8cbc73f0da6147205
+*** Element info: {Using=link text, value=Convert Lead}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.crm.vtiger.LeadModuleTests.TC_32_ConvertLeadToOpportunitiesAmount_Test.convertLeadToOpportunity(TC_32_ConvertLeadToOpportunitiesAmount_Test.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>17</td>
+<td>com.crm.vtiger.LeadModuleTests.TC_32_ConvertLeadToOpportunitiesAmount_Test@650e52</td></tr>
+<tr>
+<td title='com.crm.vtiger.LeadModuleTests.TC_34_ConvertLeadToOpportunitiesEditable_Test.convertLeadToOpportunity()'><b>convertLeadToOpportunity</b><br>Test class: com.crm.vtiger.LeadModuleTests.TC_34_ConvertLeadToOpportunitiesEditable_Test</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=90.0.4430.93)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NESS-PC&apos;, ip: &apos;192.168.68.242&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53949}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9eaf74cc80dc2f4654e6e657c257b40f
+*** Element info: {Using=link text, value=Convert Lead}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.crm.vtiger.LeadModuleTests.TC_34_ConvertLeadToOpportunitiesEditable_Test.convertLeadToOpportunity(TC_34_ConvertLeadToOpportunitiesEditable_Test.java:37)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace15090514", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace15090514'><pre>org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=90.0.4430.93)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NESS-PC&apos;, ip: &apos;192.168.68.242&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53949}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9eaf74cc80dc2f4654e6e657c257b40f
+*** Element info: {Using=link text, value=Convert Lead}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.crm.vtiger.LeadModuleTests.TC_34_ConvertLeadToOpportunitiesEditable_Test.convertLeadToOpportunity(TC_34_ConvertLeadToOpportunitiesEditable_Test.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>14</td>
+<td>com.crm.vtiger.LeadModuleTests.TC_34_ConvertLeadToOpportunitiesEditable_Test@1d0c81b</td></tr>
+<tr>
+<td title='com.crm.vtiger.LeadModuleTests.TC_34_ConvertLeadToOpportunitiesEditable_Test.convertLeadToOpportunity()'><b>convertLeadToOpportunity</b><br>Test class: com.crm.vtiger.LeadModuleTests.TC_34_ConvertLeadToOpportunitiesEditable_Test</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NESS-PC&apos;, ip: &apos;192.168.68.242&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210502185943, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 6424, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d1078a29-e60e-4e4d-b170-e5ef800f7445
+*** Element info: {Using=link text, value=Convert Lead}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.crm.vtiger.LeadModuleTests.TC_34_ConvertLeadToOpportunitiesEditable_Test.convertLeadToOpportunity(TC_34_ConvertLeadToOpportunitiesEditable_Test.java:37)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace23664635", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace23664635'><pre>org.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NESS-PC&apos;, ip: &apos;192.168.68.242&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210502185943, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 6424, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d1078a29-e60e-4e4d-b170-e5ef800f7445
+*** Element info: {Using=link text, value=Convert Lead}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.crm.vtiger.LeadModuleTests.TC_34_ConvertLeadToOpportunitiesEditable_Test.convertLeadToOpportunity(TC_34_ConvertLeadToOpportunitiesEditable_Test.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>15</td>
+<td>com.crm.vtiger.LeadModuleTests.TC_34_ConvertLeadToOpportunitiesEditable_Test@9a3d1d</td></tr>
+<tr>
+<td title='com.crm.vtiger.LeadModuleTests.TC_35_ConvertLeadToOpportunitiesCheckboxUnSelect_Test.convertLeadToOpportunity()'><b>convertLeadToOpportunity</b><br>Test class: com.crm.vtiger.LeadModuleTests.TC_35_ConvertLeadToOpportunitiesCheckboxUnSelect_Test</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NESS-PC&apos;, ip: &apos;192.168.68.242&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210502185943, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 6648, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9f20b6db-b4ee-4538-80d6-5c0b79335459
+*** Element info: {Using=link text, value=Convert Lead}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.crm.vtiger.LeadModuleTests.TC_35_ConvertLeadToOpportunitiesCheckboxUnSelect_Test.convertLeadToOpportunity(TC_35_ConvertLeadToOpportunitiesCheckboxUnSelect_Test.java:42)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace4369979", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace4369979'><pre>org.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NESS-PC&apos;, ip: &apos;192.168.68.242&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210502185943, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 6648, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9f20b6db-b4ee-4538-80d6-5c0b79335459
+*** Element info: {Using=link text, value=Convert Lead}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.crm.vtiger.LeadModuleTests.TC_35_ConvertLeadToOpportunitiesCheckboxUnSelect_Test.convertLeadToOpportunity(TC_35_ConvertLeadToOpportunitiesCheckboxUnSelect_Test.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>13</td>
+<td>com.crm.vtiger.LeadModuleTests.TC_35_ConvertLeadToOpportunitiesCheckboxUnSelect_Test@6be70a</td></tr>
+<tr>
+<td title='com.crm.vtiger.LeadModuleTests.TC_33_ConvertLeadToOpportunitiesInvalidAmount_Test.convertLeadToOpportunity()'><b>convertLeadToOpportunity</b><br>Test class: com.crm.vtiger.LeadModuleTests.TC_33_ConvertLeadToOpportunitiesInvalidAmount_Test</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NESS-PC&apos;, ip: &apos;192.168.68.242&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210502185943, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 9592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8b0c0258-cb10-466f-a17d-e02c4475224c
+*** Element info: {Using=xpath, value=//img[@title=&apos;Create Lead...&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.crm.vtiger.LeadModuleTests.TC_33_ConvertLeadToOpportunitiesInvalidAmount_Test.convertLeadToOpportunity(TC_33_ConvertLeadToOpportunitiesInvalidAmount_Test.java:34)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace27353699", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace27353699'><pre>org.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NESS-PC&apos;, ip: &apos;192.168.68.242&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210502185943, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 9592, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8b0c0258-cb10-466f-a17d-e02c4475224c
+*** Element info: {Using=xpath, value=//img[@title=&apos;Create Lead...&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.crm.vtiger.LeadModuleTests.TC_33_ConvertLeadToOpportunitiesInvalidAmount_Test.convertLeadToOpportunity(TC_33_ConvertLeadToOpportunitiesInvalidAmount_Test.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>5</td>
+<td>com.crm.vtiger.LeadModuleTests.TC_33_ConvertLeadToOpportunitiesInvalidAmount_Test@556333</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.crm.vtiger.LeadModuleTests.TC_35_ConvertLeadToOpportunitiesCheckboxUnSelect_Test.convertLeadToOpportunity()'><b>convertLeadToOpportunity</b><br>Test class: com.crm.vtiger.LeadModuleTests.TC_35_ConvertLeadToOpportunitiesCheckboxUnSelect_Test</td>
+<td></td>
+<td>48</td>
+<td>com.crm.vtiger.LeadModuleTests.TC_35_ConvertLeadToOpportunitiesCheckboxUnSelect_Test@cdbdf5</td></tr>
+<tr>
+<td title='com.crm.vtiger.LeadModuleTests.TC_31_ConvertLeadToOpportunitiesInvalidDate_Test.convertLeadToOpportunity()'><b>convertLeadToOpportunity</b><br>Test class: com.crm.vtiger.LeadModuleTests.TC_31_ConvertLeadToOpportunitiesInvalidDate_Test</td>
+<td></td>
+<td>87</td>
+<td>com.crm.vtiger.LeadModuleTests.TC_31_ConvertLeadToOpportunitiesInvalidDate_Test@11c1ea0</td></tr>
+<tr>
+<td title='com.crm.vtiger.LeadModuleTests.TC_33_ConvertLeadToOpportunitiesInvalidAmount_Test.convertLeadToOpportunity()'><b>convertLeadToOpportunity</b><br>Test class: com.crm.vtiger.LeadModuleTests.TC_33_ConvertLeadToOpportunitiesInvalidAmount_Test</td>
+<td></td>
+<td>71</td>
+<td>com.crm.vtiger.LeadModuleTests.TC_33_ConvertLeadToOpportunitiesInvalidAmount_Test@1579e0f</td></tr>
+<tr>
+<td title='com.crm.vtiger.LeadModuleTests.TC_32_ConvertLeadToOpportunitiesAmount_Test.convertLeadToOpportunity()'><b>convertLeadToOpportunity</b><br>Test class: com.crm.vtiger.LeadModuleTests.TC_32_ConvertLeadToOpportunitiesAmount_Test</td>
+<td></td>
+<td>50</td>
+<td>com.crm.vtiger.LeadModuleTests.TC_32_ConvertLeadToOpportunitiesAmount_Test@1553d26</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.crm.vtiger.LeadModuleTests.TC_31_ConvertLeadToOpportunitiesInvalidDate_Test.convertLeadToOpportunity()'><b>convertLeadToOpportunity</b><br>Test class: com.crm.vtiger.LeadModuleTests.TC_31_ConvertLeadToOpportunitiesInvalidDate_Test</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NESS-PC&apos;, ip: &apos;192.168.68.242&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210502185943, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 7392, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0e07c3ee-b066-4b6f-aca2-3079203b9943
+*** Element info: {Using=name, value=user_name}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at vtiger.automation.BaseClass.setUp(BaseClass.java:68)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace27061742", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace27061742'><pre>org.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NESS-PC&apos;, ip: &apos;192.168.68.242&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210502185943, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 7392, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0e07c3ee-b066-4b6f-aca2-3079203b9943
+*** Element info: {Using=name, value=user_name}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at vtiger.automation.BaseClass.setUp(BaseClass.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.crm.vtiger.LeadModuleTests.TC_31_ConvertLeadToOpportunitiesInvalidDate_Test@bdb19</td></tr>
+</table><p>
+</body>
+</html>
