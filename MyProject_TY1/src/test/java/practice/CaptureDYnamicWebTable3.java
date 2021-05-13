@@ -31,7 +31,7 @@ public void CaptureOrgName()
 	driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 	driver.findElement(By.linkText("Organizations")).click();
 	
-	String expData="mani";
+	String expData="Ty";
 	
 	//Step4: Capture all the Organization names
 		String x="//table[@class='lvt small']/tbody/tr[*]/td[3]/a";
@@ -47,7 +47,6 @@ public void CaptureOrgName()
 			driver.switchTo().alert().accept();
 			break;
 		}
-		int actRowCount=0;
 	}
 	
 	

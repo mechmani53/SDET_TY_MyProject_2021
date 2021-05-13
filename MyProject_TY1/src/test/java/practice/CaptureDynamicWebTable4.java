@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 public class CaptureDynamicWebTable4
 {
 	@Test
-public void CaptureOrgName()
+public void CaptureOrgName() throws Throwable
 {
 
 	WebDriver driver=new ChromeDriver();
@@ -34,6 +34,7 @@ public void CaptureOrgName()
 	String expData="mani";
 	int actRowCount=0;
 	//Step4: Capture all the Organization names
+	Thread.sleep(5000);
 		String x="//table[@class='lvt small']/tbody/tr[*]/td[3]/a";
 	List<WebElement> list=driver.findElements(By.xpath(x));
 	

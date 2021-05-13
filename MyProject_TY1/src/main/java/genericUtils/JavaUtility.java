@@ -6,7 +6,7 @@ import java.util.Random;
 
 /**
  * this class contains java specific generic libraries
- * @author sushmitamani
+ * @author mani
  */
 public class JavaUtility {
 /**
